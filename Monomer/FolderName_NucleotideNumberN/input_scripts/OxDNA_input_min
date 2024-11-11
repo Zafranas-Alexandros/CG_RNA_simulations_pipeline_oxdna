@@ -1,0 +1,32 @@
+
+backend = CPU
+steps = 10000
+
+sim_type = min
+
+dt = 0.005
+verlet_skin = 0.15
+
+T = 300K
+
+salt_concentration = 0.45
+
+interaction_type = RNA2
+max_backbone_force = 5.
+
+
+topology = oxdna.top
+conf_file = oxdna.conf
+
+trajectory_file = trajectory_min.dat
+print_conf_interval = 1000
+
+energy_file = energy_min.dat
+print_energy_every = 100
+no_stdout_energy = false
+time_scale = linear
+lastconf_file = last_conf_min.dat
+
+restart_step_counter = 1
+refresh_vel = 1
+

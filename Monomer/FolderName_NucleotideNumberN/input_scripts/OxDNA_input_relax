@@ -1,0 +1,35 @@
+
+backend = CPU
+CUDA_list = verlet
+
+sim_type = MD
+steps = 10000
+
+T = 300K
+interaction_type = RNA2
+salt_concentration = 0.45
+max_backbone_force = 5.
+max_backbone_force_far=1
+verlet_skin = 0.15
+newtonian_steps=103
+
+thermostat = bussi
+bussi_tau = 1000
+diff_coeff = 2.5
+dt = 0.005
+
+topology = oxdna.top
+conf_file = last_conf_min.dat
+
+trajectory_file = trajectory_relax.dat
+print_conf_interval = 10000
+
+energy_file = energy_relax.dat
+print_energy_every = 100
+no_stdout_energy = false
+time_scale = linear
+lastconf_file = last_conf_relax.dat
+
+restart_step_counter = 1
+refresh_vel = 1
+external_forces = 0
