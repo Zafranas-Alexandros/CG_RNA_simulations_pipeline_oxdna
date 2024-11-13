@@ -6,8 +6,8 @@ A simple pipeline to run and analyze simulations of RNA with Lammps or Oxdna uti
 
 - Step 1: Split the sequence. In the SPLITSEQ folder, there exists a script, which utilising as input a one-line seuence of RNA in a .seq file, produces .txt files containig the sequence fragments.
 - Step 2: Generate the starting structure and set up the directories. From the .txt files containing the sequence, initial oxdna-format structure files can be produced. Internally, there exists a python script to do so, however for sequence lengths larger than 20 Nucleotides, the script can't be used. Externally the topology can be built using [OxView](https://sulcgroup.github.io/oxdna-viewer/).
-- Step 3: Configure the input files.
-- Step 4: Run the simulations.
+- Step 3: Configure the input files. Before running the main script to execute the simulations, make sure to parameterize the input files according to the simulation goals. More information on Input files for Oxdna can be found [here](https://lorenzo-rovigatti.github.io/oxDNA/input.html), while for Lammps can be found [here](https://docs.lammps.org/Commands_input.html).
+- Step 4: Run the simulations. 
 
 
 ## Analysing the simulations
@@ -21,6 +21,6 @@ A simple pipeline to run and analyze simulations of RNA with Lammps or Oxdna uti
 - Python (3.11.2)
 - VMD
 - Lammps 
-- oxdna
+- Oxdna
 
 
