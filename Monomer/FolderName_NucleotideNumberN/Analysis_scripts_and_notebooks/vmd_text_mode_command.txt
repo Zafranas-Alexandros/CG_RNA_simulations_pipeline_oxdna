@@ -1,5 +1,0 @@
-~/Desktop/VMD_1.9.3.app/Contents/MacOS/startup.command -dispdev text -e MSD_rmsf_rmsd_rgyr_PCA_prep.tcl -args ./../working_dir/trajectory_XXXXN.lammpstrj
-
-
-
-This is the command to run the tcl scripts with VMD in text mode - helps with memory crashes. The XXXX represent the number of nucleotides - assuming the naming scheme implemented before is used. After -e the .tcl script one wishes to run should be written.
