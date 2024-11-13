@@ -18,9 +18,9 @@ A simple pipeline to run and analyze simulations of RNA with Lammps or Oxdna uti
 
 ### Required Software - Dependencies
 
-- Python (3.11.2 was used here, however any python3 version should work.)
-- VMD
-- Lammps 
+- Python (3.11.2 was used, however any python 3 version should work. If python is used to produce starting topologies, python 2 is necessary.)
+- VMD (1.9.3 was used, any later version should work.)
+- Lammps (2Aug2023 - Update 3 was used. When compiling Lammps, make sure to incorporate CG-DNA and prerequisite packages.)
 - Oxdna
 
 
